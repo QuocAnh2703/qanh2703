@@ -246,7 +246,7 @@ const wishes = [
     // "Mãi bên nhau nhé, tình yêu của anh! ❤️",
     // "Chúc em nhận được thật nhiều hoa và quà! 🎁🌹"
     "Qanh mới học code web nên web còn hơi lỗi",
-    "Ờmm nay bận quá nên k có gì gửi tặng hết :(, nếu muốn đi đâu thì nói qanh nhé  😊",
+    "Ờmm nay bận quá nên k có gì gửi tặng hết :(, với lại k biết cách bày tỏ như nào :v  😊",
     "Gửi ngàn nụ hôn đến bà xã trong ngày Valentine! 😘",
     "Forever smile my darling!! ❤️",
     "Hôm nay đến giờ mới rảnh mới gửi cái này kakaka, i'm sorry 🎁🌹"
