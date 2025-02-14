@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang lấy thông tin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="stylesyes.css">
+</head>
+<body style="background: linear-gradient(135deg, rgb(226, 224, 223) 0%, rgb(255, 255, 255) 80%);">
+    
+    <div id="loading-screen">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWUweWtpOXhoaTNuM3pycmkyZDQ4Z3JwZmwzZjlocmN1MWEzM3BybSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Bjh3pSRGX9rOg/giphy.gif" 
+             alt="Loading..." class="loading-gif">
+        <p class="loading-text">Đang lấy dữ liệu từ máy...</p>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <p id="loading-percentage">0%</p>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <div class="container" style="border-color: rgb(136, 127, 124); color: rgb(136, 127, 124); background-color: rgb(255, 255, 255);">
+            
+            <div class="left-side">
+                <h1 style="color: rgb(136, 127, 124);">Playlist</h1>
+                <p style="color: rgb(136, 127, 124);">Songs for Valentine</p>
+                
+                <div class="wish-box">
+                    <h2>💌 Lời nhắn nhủ</h2>
+                    <p id="wish-text">Chúc mừng bạn đã bị tôi đánh cắp tất cả thông tin! 💖</p>
+                    <button class="control-btn" onclick="nextWish()">Click next!!</button>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <input type="radio" name="slider" id="item-4">
+                <input type="radio" name="slider" id="item-5">
+
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1" data-avg-r="190" data-avg-g="218" data-avg-b="239" data-dark-r="104" data-dark-g="169" data-dark-b="218" style="background-color: rgb(190, 218, 239); border-color: rgb(104, 169, 218);">
+                        <img src="https://lingkarwilis.com/wp-content/uploads/2024/12/N-2024-12-13T122433.890.jpg" alt="Blue">
+                    </label>
+
+                    <label class="card" for="item-2" id="song-2" data-avg-r="177" data-avg-g="171" data-avg-b="169" data-dark-r="136" data-dark-g="127" data-dark-b="124" style="background-color: rgb(177, 171, 169); border-color: rgb(136, 127, 124);">
+                        <img src="https://home.voca.vn/assets/img/news/loi-dich-bai-hat-die-with-the-smile1727343647.jpeg" alt="Die With A Smile">
+                    </label>
+
+                    <label class="card" for="item-3" id="song-3" data-avg-r="217" data-avg-g="197" data-avg-b="211" data-dark-r="176" data-dark-g="134" data-dark-b="164" style="background-color: rgb(217, 197, 211); border-color: rgb(176, 134, 164);">
+                        <img src="https://i.imgur.com/TqwKj1B.jpg" alt="Daylight">
+                    </label>
+
+                    <label class="card" for="item-4" id="song-4" data-avg-r="169" data-avg-g="172" data-avg-b="152" data-dark-r="131" data-dark-g="135" data-dark-b="108" style="background-color: rgb(169, 172, 152); border-color: rgb(131, 135, 108);">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Glass_Animals_-_Heat_Waves.png/220px-Glass_Animals_-_Heat_Waves.png" alt="Heat Waves">
+                    </label>
+
+                    <label class="card" for="item-5" id="song-5" data-avg-r="176" data-avg-g="176" data-avg-b="176" data-dark-r="132" data-dark-g="132" data-dark-b="132" style="background-color: rgb(176, 176, 176); border-color: rgb(132, 132, 132);">
+                        <img src="https://avatar-ex-swe.nixcdn.com/song/2024/03/15/4/c/b/d/1710498649541_640.jpg" alt="Nơi Này Có Anh">
+                    </label>
+                </div>
+
+                <div class="player" style="border-color: rgb(136, 127, 124); color: rgb(136, 127, 124); background-color: rgb(251, 251, 251);">
+                    <div class="song-info active" id="song-info-1">
+                        <div class="title">Nơi Này Có Anh</div>
+                        <div class="song-details">
+                            <span class="artist">Sơn Tùng MTP</span>
+                            <span class="duration">4:20</span>
+                        </div>
+                        <div class="progress-bar" style="background-color: rgb(177, 171, 169);">
+                            <div class="progress" style="width: 0%; background-color: rgb(136, 127, 124);"></div>
+                        </div>
+                        <div class="time-indicator">
+                            <span class="elapsed">0:00</span>
+                            <span class="remaining">4:20</span>
+                        </div>
+                    </div>
+
+                    <div class="song-info" id="song-info-2">
+                        <div class="title">Die With A Smile</div>
+                        <div class="song-details">
+                            <span class="artist">Lady Gaga, Bruno Mars</span>
+                            <span class="duration">4:11</span>
+                        </div>
+                        <div class="progress-bar" style="background-color: rgb(177, 171, 169);">
+                            <div class="progress" style="width: 98.4522%; background-color: rgb(136, 127, 124);"></div>
+                        </div>
+                        <div class="time-indicator">
+                            <span class="elapsed">0:00</span>
+                            <span class="remaining">4:11</span>
+                        </div>
+                    </div>
+
+                    <div class="song-info" id="song-info-3">
+                        <div class="title">Daylight</div>
+                        <div class="song-details">
+                            <span class="artist">Taylor Swift</span>
+                            <span class="duration">4:53</span>
+                        </div>
+                        <div class="progress-bar" style="background-color: rgb(177, 171, 169);">
+                            <div class="progress" style="width: 0%; background-color: rgb(136, 127, 124);"></div>
+                        </div>
+                        <div class="time-indicator">
+                            <span class="elapsed">0:00</span>
+                            <span class="remaining">4:53</span>
+                        </div>
+                    </div>
+
+                    <div class="song-info" id="song-info-4">
+                        <div class="title">Heat Waves</div>
+                        <div class="song-details">
+                            <span class="artist">Glass Animals</span>
+                            <span class="duration">3:58</span>
+                        </div>
+                        <div class="progress-bar" style="background-color: rgb(177, 171, 169);">
+                            <div class="progress" style="width: 0%; background-color: rgb(136, 127, 124);"></div>
+                        </div>
+                        <div class="time-indicator">
+                            <span class="elapsed">0:00</span>
+                            <span class="remaining">3:58</span>
+                        </div>
+                    </div>
+
+                    <div class="song-info" id="song-info-5">
+                        <div class="title">Blue</div>
+                        <div class="song-details">
+                            <span class="artist">Yung Kai</span>
+                            <span class="duration">3:14</span>
+                        </div>
+                        <div class="progress-bar" style="background-color: rgb(177, 171, 169);">
+                            <div class="progress" style="width: 0%; background-color: rgb(136, 127, 124);"></div>
+                        </div>
+                        <div class="time-indicator">
+                            <span class="elapsed">0:00</span>
+                            <span class="remaining">3:14</span>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button id="prev" style="color: rgb(136, 127, 124);">◁</button>
+                        <button id="pause" style="color: rgb(136, 127, 124);">▐▐</button>
+                        <button id="next" style="color: rgb(136, 127, 124);">▷</button>
+                    </div>
+
+                    <div class="extra-controls">
+                        <button id="favorite" class="favorite-btn">♡</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scriptyes.js"></script>
+</body>
+</html>
