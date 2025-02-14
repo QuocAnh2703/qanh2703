@@ -22,11 +22,11 @@ window.addEventListener('load', updateLoading);
 
 // ========== AUDIO PLAYER ==========
 const audioFiles = [
-    'music/noinaycoanh.mp3',
+    'music/blue.mp3',
     'music/diewithasmile.mp3',
     'music/daylight.mp3',
     'music/heatwaves.mp3',
-    'music/blue.mp3'
+    'music/noinaycoanh.mp3'
 ];
 
 const songImages = [
