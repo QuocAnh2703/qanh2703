@@ -245,11 +245,11 @@ const wishes = [
     // "Gửi ngàn nụ hôn đến em trong ngày Valentine! 😘",
     // "Mãi bên nhau nhé, tình yêu của anh! ❤️",
     // "Chúc em nhận được thật nhiều hoa và quà! 🎁🌹"
-    "Qanh mới học code web nên web còn hơi lỗi",
-    "Ờmm nay bận quá nên k có gì gửi tặng hết :(, với lại k biết cách bày tỏ như nào :v  😊",
-    "Gửi ngàn nụ hôn đến bà xã trong ngày Valentine! 😘",
+    "You stole my heart, but I’ll let you keep it. <3",
+    "You are my today and all of my tomorrows.  😊",
+    "Happy Valentine's Day! 😘",
     "Forever smile my darling!! ❤️",
-    "Hôm nay đến giờ mới rảnh mới gửi cái này kakaka, i'm sorry 🎁🌹"
+    "🎁🌹"
 ];
 
 let wishIndex = 0;
